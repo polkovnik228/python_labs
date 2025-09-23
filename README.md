@@ -54,3 +54,17 @@ result = minutes_to_hhmm(m)
 print(f"{result}")
 ```
 ![image 4](./images/lab01/04_minutes_to_hhmm.png)
+
+### Задание 5
+
+```python
+fio = input("ФИО: ")
+fio_clean = " ".join(fio.split())
+parts = fio_clean.split()
+initials = "".join([p[0].upper() for p in parts]) + "."
+
+print(f"Инициалы: {initials}")
+print(f"Длина (символов): {len(fio_clean)}")
+```
+![image5](./images/lab01/05_initials_and_len.png)
+
