@@ -68,3 +68,5 @@ print(f"Длина (символов): {len(fio_clean)}")
 ```
 ![image5](./images/lab01/05_initials_and_len.png)
 
+### Задание 5
+
