@@ -66,7 +66,21 @@ initials = "".join([p[0].upper() for p in parts]) + "."
 print(f"Инициалы: {initials}")
 print(f"Длина (символов): {len(fio_clean)}")
 ```
-![image5](./images/lab01/05_initials_and_len.png)
+![image 5](./images/lab01/05_initials_and_len.png)
 
-### Задание 5
+### Задание 6
+
+```python
+n = int(input('Введите количество участников: '))  
+ochno = 0  
+zaochno = 0
+for i in range(n):
+    fam, name, age, form = input('Введите свою фамилию, имя, возраст и форму обучения: ').split()
+    if form=="True":
+        ochno += 1
+    else:
+        zaochno += 1
+print('Очно: ',ochno, 'Заочно: ', zaochno)
+```
+![image 6](./images/lab01/06.png)
 
