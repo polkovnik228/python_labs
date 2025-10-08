@@ -113,3 +113,20 @@ print(unique_sorted([]))
 ```
 ![image1.2](./images/lab02/arrays2.png)
 
+### Задание 1 (flatten)
+
+```python
+def flatten(mat: list[list | tuple]) -> list:
+     flat = []
+     for row in mat:
+         if not isinstance(row, (list, tuple)):
+             raise TypeError
+         flat.extend(row)
+     return flat
+print(flatten([[1, 2], [3, 4]]))
+print(flatten([[1, 2], (3, 4, 5)]))
+print(flatten([[1], [], [2, 3]]))
+print(flatten([[1, 2], "ab"]))
+```
+![image1.3](./images/lab02/arrays3.png)
+

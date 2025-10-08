@@ -12,6 +12,7 @@
 # print(transpose([]))
 # print(transpose([[1, 2], [3]]))
 
+
 # def row_sums(mat: list[list[float | int]]) -> list[float]:
 #     if not mat:
 #         return []
@@ -24,8 +25,6 @@
 # print(row_sums([[-1, 1], [10, -10]]))
 # print(row_sums([[0, 0], [0, 0]]))
 # print(row_sums([[1, 2], [3]]))
-
-
 
 
 # def col_sums(mat: list[list[float | int]]) -> list[float]:
