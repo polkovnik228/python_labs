@@ -86,4 +86,17 @@ print('Очно: ',ochno, 'Заочно: ', zaochno)
 
 ## Лабораторная работа 2
 
-### Задание 1
+### Задание 1 (min_max)
+
+```python
+def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
+    if not nums:
+        raise ValueError
+    return (min(nums), max(nums))
+print(min_max([3, -1, 5, 5, 0]))
+print(min_max([42]))
+print(min_max([-5, -2, -9]))
+print(min_max([1.5, 2, 2.0, -3.1]))
+print(min_max([]))
+```
+![image1](./images/lab02/arrays1.png)
