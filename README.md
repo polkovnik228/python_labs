@@ -99,4 +99,17 @@ print(min_max([-5, -2, -9]))
 print(min_max([1.5, 2, 2.0, -3.1]))
 print(min_max([]))
 ```
-![image1](./images/lab02/arrays1.png)
+![image1.1](./images/lab02/arrays1.png)
+
+### Задание 1 (unique sorted)
+
+```python 
+def unique_sorted(nums: list[float | int]) -> list[float | int]:
+     return sorted(set(nums))
+print(unique_sorted([3, 1, 2, 1, 3]))
+print(unique_sorted([-1, -1, 0, 2, 2]))
+print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
+print(unique_sorted([]))
+```
+![image1.2](./images/lab02/arrays2.png)
+
