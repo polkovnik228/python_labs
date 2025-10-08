@@ -84,6 +84,7 @@ print('Очно: ',ochno, 'Заочно: ', zaochno)
 ```
 ![image 6](./images/lab01/06.png)
 
+<<<<<<< HEAD
 ## Лабораторная работа 2
 
 ### Задание 1 (min_max)
@@ -130,3 +131,5 @@ print(flatten([[1, 2], "ab"]))
 ```
 ![image1.3](./images/lab02/arrays3.png)
 
+=======
+>>>>>>> parent of d227255 (zadanie 1.1)
