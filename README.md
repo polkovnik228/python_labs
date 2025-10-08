@@ -84,7 +84,6 @@ print('Очно: ',ochno, 'Заочно: ', zaochno)
 ```
 ![image 6](./images/lab01/06.png)
 
-<<<<<<< HEAD
 ## Лабораторная работа 2
 
 ### Задание 1 (min_max)
@@ -131,5 +130,57 @@ print(flatten([[1, 2], "ab"]))
 ```
 ![image1.3](./images/lab02/arrays3.png)
 
-=======
->>>>>>> parent of d227255 (zadanie 1.1)
+### Задание 2 (transpose)
+
+```python
+def transpose(mat: list[list[float | int]]) -> list[list]:
+    if not mat:
+        return []
+    row_len = len(mat[0])
+    for row in mat:
+        if len(row) != row_len:
+            raise ValueError
+    return [[mat[r][c] for r in range(len(mat))] for c in range(row_len)]
+print(transpose([[1, 2, 3]]))
+print(transpose([[1], [2], [3]]))
+print(transpose([[1, 2], [3, 4]]))
+print(transpose([]))
+print(transpose([[1, 2], [3]]))
+```
+![image2.1](./images/lab02/matrix1.png)
+
+### Задание 2 (row_sums)
+
+```python
+def row_sums(mat: list[list[float | int]]) -> list[float]:
+    if not mat:
+        return []
+    row_len = len(mat[0])
+    for row in mat:
+        if len(row) != row_len:
+            raise ValueError
+    return [sum(row) for row in mat]
+print(row_sums([[1, 2, 3], [4, 5, 6]]))
+print(row_sums([[-1, 1], [10, -10]]))
+print(row_sums([[0, 0], [0, 0]]))
+print(row_sums([[1, 2], [3]]))
+```
+![image2.2](./images/lab02/matrix2.png)
+
+### Задание 2 (col_sums)
+
+```python
+def col_sums(mat: list[list[float | int]]) -> list[float]:
+    if not mat:
+        return []
+    row_len = len(mat[0])
+    for row in mat:
+        if len(row) != row_len:
+            raise ValueError
+    return [sum(row[c] for row in mat) for c in range(row_len)]
+print(col_sums([[1, 2, 3], [4, 5, 6]]))
+print(col_sums([[-1, 1], [10, -10]]))
+print(col_sums([[0, 0], [0, 0]]))
+print(col_sums([[1, 2], [3]]))
+```
+![image2.3](./images/lab02/matrix3.png)
