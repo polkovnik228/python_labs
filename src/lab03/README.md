@@ -1,8 +1,6 @@
-# python_labs
+# Лабораторная работа №3 — Тексты и частоты слов
 
-## Лабораторная работа 3
-
-### Задание A (normalize)
+## Задание A (normalize)
 
 ```python
 import re
@@ -25,7 +23,7 @@ print(normalize("  двойные   пробелы  "))
 ```
 ![image3.1](./images/lab03/normalize.png)
 
-### Задание A (tokenize)
+## Задание A (tokenize)
 
 ```python
 def tokenize(text: str) -> list[str]:
@@ -39,7 +37,7 @@ print(tokenize("emoji 😀 не слово"))
 ```
 ![image3.2](./images/lab03/tokenize.png)
 
-### Задание A (count_freq и top_n) 
+## Задание A (count_freq и top_n) 
 
 ```python
 def count_freq(tokens: list[str]) -> dict[str, int]:
@@ -53,7 +51,7 @@ print(top_n(count_freq(tokens), 2))
 ```
 ![image3.34](./images/lab03/top_n-count_freq.png)
 
-### Задание B
+## Задание B
 
 ```python
 import sys
