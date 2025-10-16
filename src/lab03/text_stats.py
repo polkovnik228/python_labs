@@ -5,7 +5,7 @@ from pathlib import Path
 lib_path = Path(__file__).resolve().parent.parent / 'lib'
 sys.path.insert(0, str(lib_path))
 
-from text import normalize, tokenize, count_freq, top_n
+from text import normalize, tokenize, count_freq, top_n #type: ignore
 
 
 def analyze_text(text):
