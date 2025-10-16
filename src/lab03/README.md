@@ -35,7 +35,7 @@ print(tokenize("по-настоящему круто"))
 print(tokenize("2025 год"))
 print(tokenize("emoji 😀 не слово"))
 ```
-![image3.2](./images/lab03/tokenize.png)
+![image3.2](../../images/lab03/tokenize.png)
 
 ## Задание A (count_freq и top_n) 
 
@@ -49,7 +49,7 @@ tokens = ["a", "b", "a", "c", "b", "a"]
 print(count_freq(tokens))
 print(top_n(count_freq(tokens), 2))
 ```
-![image3.34](./images/lab03/top_n-count_freq.png)
+![image3.34](../../images/lab03/top_n-count_freq.png)
 
 ## Задание B
 
@@ -117,7 +117,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-![image3.5](./images/lab03/text_status.png)
+![image3.5](../../images/lab03/text_status.png)
 
 
 

@@ -9,7 +9,7 @@ name = input("Имя: ")
 age = int(input("Возраст: "))
 print(f"Привет, {name}! Через год тебе будет {age + 1}.")
 ```
-![image 1](./images/lab01/01_greeting.png)
+![image 1](../../images/lab01/01_greeting.png)
 
 ### Задание 2
 
@@ -22,7 +22,7 @@ avg = s / 2
 
 print(f"sum={s:.2f}; avg={avg:.2f}")
 ```
-![image 2](./images/lab01/02_sum_avg.png)
+![image 2](../../images/lab01/02_sum_avg.png)
 
 ### Задание 3
 
@@ -39,7 +39,7 @@ print(f"База после скидки: {base:.2f} ₽")
 print(f"НДС: {vat_amount:.2f} ₽")
 print(f"Итого к оплате: {total:.2f} ₽")
 ```
-![image 3](./images/lab01/03_discount_vat.png)
+![image 3](../../images/lab01/03_discount_vat.png)
 
 ### Задание 4
 
@@ -53,7 +53,7 @@ m = int(input("Минуты: "))
 result = minutes_to_hhmm(m)
 print(f"{result}")
 ```
-![image 4](./images/lab01/04_minutes_to_hhmm.png)
+![image 4](../../images/lab01/04_minutes_to_hhmm.png)
 
 ### Задание 5
 
@@ -66,7 +66,7 @@ initials = "".join([p[0].upper() for p in parts]) + "."
 print(f"Инициалы: {initials}")
 print(f"Длина (символов): {len(fio_clean)}")
 ```
-![image 5](./images/lab01/05_initials_and_len.png)
+![image 5](../../images/lab01/05_initials_and_len.png)
 
 ### Задание 6
 
@@ -82,4 +82,4 @@ for i in range(n):
         zaochno += 1
 print('Очно: ',ochno, 'Заочно: ', zaochno)
 ```
-![image 6](./images/lab01/06.png)
+![image 6](../../images/lab01/06.png)

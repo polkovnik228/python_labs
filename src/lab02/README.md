@@ -15,7 +15,7 @@ print(min_max([-5, -2, -9]))
 print(min_max([1.5, 2, 2.0, -3.1]))
 print(min_max([]))
 ```
-![image1.1](./images/lab02/arrays1.png)
+![image1.1](../../images/lab02/arrays1.png)
 
 ### Задание 1 (unique sorted)
 
@@ -27,7 +27,7 @@ print(unique_sorted([-1, -1, 0, 2, 2]))
 print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
 print(unique_sorted([]))
 ```
-![image1.2](./images/lab02/arrays2.png)
+![image1.2](../../images/lab02/arrays2.png)
 
 ### Задание 1 (flatten)
 
@@ -44,7 +44,7 @@ print(flatten([[1, 2], (3, 4, 5)]))
 print(flatten([[1], [], [2, 3]]))
 print(flatten([[1, 2], "ab"]))
 ```
-![image1.3](./images/lab02/arrays3.png)
+![image1.3](../../images/lab02/arrays3.png)
 
 ### Задание 2 (transpose)
 
@@ -63,7 +63,7 @@ print(transpose([[1, 2], [3, 4]]))
 print(transpose([]))
 print(transpose([[1, 2], [3]]))
 ```
-![image2.1](./images/lab02/matrix1.png)
+![image2.1](../../images/lab02/matrix1.png)
 
 ### Задание 2 (row_sums)
 
@@ -81,7 +81,7 @@ print(row_sums([[-1, 1], [10, -10]]))
 print(row_sums([[0, 0], [0, 0]]))
 print(row_sums([[1, 2], [3]]))
 ```
-![image2.2](./images/lab02/matrix2.png)
+![image2.2](../../images/lab02/matrix2.png)
 
 ### Задание 2 (col_sums)
 
@@ -99,7 +99,7 @@ print(col_sums([[-1, 1], [10, -10]]))
 print(col_sums([[0, 0], [0, 0]]))
 print(col_sums([[1, 2], [3]]))
 ```
-![image2.3](./images/lab02/matrix3.png)
+![image2.3](../../images/lab02/matrix3.png)
 
 ### Задание 3
 
@@ -136,4 +136,4 @@ print(format_record(("Петров Пётр Петрович", "IKBO-12", 5.0)))
 print(format_record(("  сидорова  анна   сергеевна ", "ABB-01", 3.999)))
 print(format_record(("","")))
 ```
-![image3](./images/lab02/tuples.png)
+![image3](../../images/lab02/tuples.png)
