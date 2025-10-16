@@ -21,7 +21,7 @@ print(normalize("ёжик, Ёлка"))
 print(normalize("Hello\r\nWorld")) 
 print(normalize("  двойные   пробелы  ")) 
 ```
-![image3.1](./images/lab03/normalize.png)
+![image3.1](../../images/lab03/normalize.png)
 
 ## Задание A (tokenize)
 
