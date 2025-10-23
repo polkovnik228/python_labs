@@ -1,8 +1,6 @@
-# python_labs
+# Лабораторная работа 2 — Коллекции и матрицы (list/tuple/set/dict)
 
-## Лабораторная работа 2
-
-### Задание 1 (min_max)
+## Задание 1 (min_max)
 
 ```python
 def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
@@ -17,7 +15,7 @@ print(min_max([]))
 ```
 ![image1.1](../../images/lab02/arrays1.png)
 
-### Задание 1 (unique sorted)
+## Задание 1 (unique sorted)
 
 ```python 
 def unique_sorted(nums: list[float | int]) -> list[float | int]:
@@ -29,7 +27,7 @@ print(unique_sorted([]))
 ```
 ![image1.2](../../images/lab02/arrays2.png)
 
-### Задание 1 (flatten)
+## Задание 1 (flatten)
 
 ```python
 def flatten(mat: list[list | tuple]) -> list:
@@ -46,7 +44,7 @@ print(flatten([[1, 2], "ab"]))
 ```
 ![image1.3](../../images/lab02/arrays3.png)
 
-### Задание 2 (transpose)
+## Задание 2 (transpose)
 
 ```python
 def transpose(mat: list[list[float | int]]) -> list[list]:
@@ -65,7 +63,7 @@ print(transpose([[1, 2], [3]]))
 ```
 ![image2.1](../../images/lab02/matrix1.png)
 
-### Задание 2 (row_sums)
+## Задание 2 (row_sums)
 
 ```python
 def row_sums(mat: list[list[float | int]]) -> list[float]:
@@ -83,7 +81,7 @@ print(row_sums([[1, 2], [3]]))
 ```
 ![image2.2](../../images/lab02/matrix2.png)
 
-### Задание 2 (col_sums)
+## Задание 2 (col_sums)
 
 ```python
 def col_sums(mat: list[list[float | int]]) -> list[float]:
@@ -101,7 +99,7 @@ print(col_sums([[1, 2], [3]]))
 ```
 ![image2.3](../../images/lab02/matrix3.png)
 
-### Задание 3
+## Задание 3
 
 ```python
 def format_record(rec: tuple[str, str, float]) -> str:

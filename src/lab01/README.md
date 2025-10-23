@@ -1,8 +1,6 @@
-# python_labs
+# Лабораторная работа 1 — Ввод/вывод и форматирование
 
-## Лабораторная работа 1
-
-### Задание 1
+## Задание 1
 
 ```python
 name = input("Имя: ")
@@ -11,7 +9,7 @@ print(f"Привет, {name}! Через год тебе будет {age + 1}.")
 ```
 ![image 1](../../images/lab01/01_greeting.png)
 
-### Задание 2
+## Задание 2
 
 ```python
 a = float(input("a: ").replace(",", "."))
@@ -24,7 +22,7 @@ print(f"sum={s:.2f}; avg={avg:.2f}")
 ```
 ![image 2](../../images/lab01/02_sum_avg.png)
 
-### Задание 3
+## Задание 3
 
 ```python
 price = float(input())
@@ -41,7 +39,7 @@ print(f"Итого к оплате: {total:.2f} ₽")
 ```
 ![image 3](../../images/lab01/03_discount_vat.png)
 
-### Задание 4
+## Задание 4
 
 ```python
 def minutes_to_hhmm(m):
@@ -55,7 +53,7 @@ print(f"{result}")
 ```
 ![image 4](../../images/lab01/04_minutes_to_hhmm.png)
 
-### Задание 5
+## Задание 5
 
 ```python
 fio = input("ФИО: ")
@@ -68,7 +66,7 @@ print(f"Длина (символов): {len(fio_clean)}")
 ```
 ![image 5](../../images/lab01/05_initials_and_len.png)
 
-### Задание 6
+## Задание 6
 
 ```python
 n = int(input('Введите количество участников: '))  
