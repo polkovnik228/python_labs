@@ -98,7 +98,7 @@ for word, count in top_n(freq_big, 5):
 
 ## Тест-кейсы 
 
-### A. Один файл (база)
+## A. Один файл (база)
 
 #### Вход: (`data/input.txt`):
 ![image4.2](../../images/lab04/input_txt.png)
@@ -110,7 +110,7 @@ for word, count in top_n(freq_big, 5):
 ![image4.4](../../images/lab04/console.png)
 
 
-### B. Пустой файл
+## B. Пустой файл
 
 #### Вход: пустой (`data/input.txt`):
 ![image4.5](../../images/lab04/empty_input_txt.png)
@@ -122,7 +122,7 @@ for word, count in top_n(freq_big, 5):
 ![image4.7](../../images/lab04/console2.png)
 
 
-### C. Кодировка cp1251
+## C. Кодировка cp1251
 
 #### Вход: (`data/input.txt`) в cp1251 с текстом Привет:
 ![image4.7](../../images/lab04/input_cp1251.png)
