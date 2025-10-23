@@ -32,70 +32,6 @@ def write_csv(
             writer.writerow(r)
 ```
 
-## Тест `io_txt_csv.py` (+ краевые случаи)
-
-```python
-from pathlib import Path
-from collections import Counter
-from src.lab04.io_txt_csv import read_text, write_csv
-from src.lib.text import normalize, tokenize, top_n
-
-DATA_DIR = Path("data/lab04")
-DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-#Пустой файл
-empty_file = DATA_DIR / "empty.txt"
-empty_file.write_text("")
-text = read_text(empty_file)
-tokens = tokenize(normalize(text))
-freq = Counter(tokens)
-
-report_empty_csv = DATA_DIR / "report_empty.csv"
-write_csv(sorted(freq.items(), key=lambda x: (-x[1], x[0])),
-          report_empty_csv, header=("word", "count"))
-
-print("Пустой файл:")
-print(f"Всего слов: {len(tokens)}")
-print(f"Уникальных слов: {len(freq)}")
-print(f"CSV создан: {report_empty_csv}\n")
-
-#Пустой список rows, header=None
-empty_csv_file = DATA_DIR / "check_empty.csv"
-write_csv([], empty_csv_file)
-print("Пустой список rows, header=None:")
-print(f"CSV создан: {empty_csv_file} (0 строк)\n")
-
-#Пустой список rows, с заголовком
-header_only_csv = DATA_DIR / "check_header.csv"
-write_csv([], header_only_csv, header=("a", "b"))
-print("Пустой список rows, с заголовком:")
-print(f"CSV создан: {header_only_csv} (только заголовок)\n")
-
-#Большой файл
-big_file = DATA_DIR / "big.txt"
-big_text = "слово " * 1000000 
-big_file.write_text(big_text)
-
-tokens_big = tokenize(normalize(read_text(big_file)))
-freq_big = Counter(tokens_big)
-
-report_big_csv = DATA_DIR / "report_big.csv"
-write_csv(sorted(freq_big.items(), key=lambda x: (-x[1], x[0])),
-          report_big_csv, header=("word", "count"))
-
-print("Большой файл:")
-print(f"Всего слов: {len(tokens_big)}")
-print(f"Уникальных слов: {len(freq_big)}")
-print(f"CSV создан: {report_big_csv}\n")
-
-# Проверка top_n
-print("Топ-5 слов из большого файла:")
-for word, count in top_n(freq_big, 5):
-    print(f"{word}: {count}")
-```
-## Итог:
-![image4.1](../../images/lab04/test_io_txt.png)
-
 ## Задание B — скрипт `src/lab04/text_report.py`
 
 ```python
@@ -129,63 +65,6 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-
-## Тест `text_report.py` (+ краевые случаи)
-
-```python
-import sys
-from pathlib import Path
-from collections import Counter
-from src.lab04.io_txt_csv import read_text, write_csv
-from src.lib.text import normalize, tokenize
-
-DATA_DIR = Path("data/lab04")
-DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-#не существует
-missing_file = DATA_DIR / "missing.txt"
-print("Проверка: файл не существует")
-try:
-    read_text(missing_file)
-except FileNotFoundError:
-    print(f"Ошибка: файл {missing_file} не найден.\n")
-
-#Пустой вход
-empty_file = DATA_DIR / "empty_input.txt"
-empty_file.write_text("")
-
-print("Проверка: пустой файл")
-text = read_text(empty_file)
-tokens = tokenize(normalize(text))
-freq = Counter(tokens)
-
-report_empty_csv = DATA_DIR / "report_empty.csv"
-write_csv(sorted(freq.items(), key=lambda x: (-x[1], x[0])),
-          report_empty_csv, header=("word", "count"))
-
-print(f"Всего слов: {len(tokens)}")
-print(f"Уникальных слов: {len(freq)}")
-print(f"CSV создан: {report_empty_csv}\n")
-
-#Нестандартная кодировка
-cp1251_file = DATA_DIR / "input_cp1251.txt"
-cp1251_file.write_text("Привет", encoding="cp1251")
-
-print("Проверка: кодировка CP1251")
-text = read_text(cp1251_file, encoding="cp1251")
-tokens = tokenize(normalize(text))
-freq = Counter(tokens)
-
-report_cp1251_csv = DATA_DIR / "report_cp1251.csv"
-write_csv(sorted(freq.items(), key=lambda x: (-x[1], x[0])),
-          report_cp1251_csv, header=("word", "count"))
-
-print(f"Всего слов: {len(tokens)}")
-print(f"Уникальных слов: {len(freq)}")
-print(f"CSV создан: {report_cp1251_csv}")
-```
-## Итог:
-![image4.111](../../images/lab04/test_text_report.png)
 
 ## A. Один файл (база)
 
