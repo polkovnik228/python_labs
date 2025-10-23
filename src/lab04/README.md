@@ -137,6 +137,4 @@ for word, count in top_n(freq_big, 5):
 ![image4.8](../../images/lab04/report_csv_3.png)
 ```
 **Консоль:**
-```
 ![image4.9](../../images/lab04/console3.png)
-```
