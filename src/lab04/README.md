@@ -99,42 +99,38 @@ for word, count in top_n(freq_big, 5):
 ## Тест-кейсы 
 
 ### A. Один файл (база)
-**Вход: (`data/input.txt`):**
-```
+
+#### Вход: (`data/input.txt`):
 ![image4.2](../../images/lab04/input_txt.png)
-```
-**Итог: `report.csv`:**
-```
+
+#### Итог: `report.csv`:
 ![image4.3](../../images/lab04/report_csv.png)
-```
-**Консоль:**
-```
+
+#### Консоль:
 ![image4.4](../../images/lab04/console.png)
-```
+
 
 ### B. Пустой файл
-**Вход: пустой (`data/input.txt`):**
-```
+
+#### Вход: пустой (`data/input.txt`):
 ![image4.5](../../images/lab04/empty_input_txt.png)
-```
-**Итог: `report.csv` содержит только заголовок:**
-```
+
+#### Итог: `report.csv` содержит только заголовок:
 ![image4.6](../../images/lab04/report_csv_2.png)
-```
-**Консоль:**
-```
+
+#### Консоль:
 ![image4.7](../../images/lab04/console2.png)
-```
+
 
 ### C. Кодировка cp1251
-**Вход: (`data/input.txt`) в cp1251 с текстом Привет:**
-```
+
+#### Вход: (`data/input.txt`) в cp1251 с текстом Привет:
 ![image4.7](../../images/lab04/input_cp1251.png)
-```
+
 **Действие:** `python src/lab04/text_report.py --in data/input.txt --encoding cp1251`  
-**Итог: `report.csv`:**
-```
+
+#### Итог: `report.csv`:
 ![image4.8](../../images/lab04/report_csv_3.png)
-```
+
 #### Консоль:
 ![image4.9](../../images/lab04/console3.png)
