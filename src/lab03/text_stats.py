@@ -55,7 +55,7 @@ def main():
     
     total, unique, top = analyze_text(text)
     table_format = os.environ.get('TABLE_FORMAT', '0') == '1'
-    print_stats(total, unique, top, table_format)
+    print_stats(total, unique, top, table=True)
 
 
 if __name__ == "__main__":
