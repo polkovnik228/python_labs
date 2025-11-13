@@ -11,3 +11,6 @@
 
 ## ЛР4 — Файлы: TXT/CSV и отчёты по текстовой статистике
 [Перейти к README lab04](src/lab04/README.md)
+
+## ЛР5 — JSON и конвертации (JSON↔CSV, CSV→XLSX)
+[Перейти к README lab05](src/lab05/README.md)
