@@ -16,4 +16,4 @@
 [Перейти к README lab05](src/lab05/README.md)
 
 ## ЛР6 — CLI‑утилиты с argparse (cat/grep‑lite + конвертеры): Техническое задание
-[Перейти к README lab05](src/lab06/README.md)
+[Перейти к README lab06](src/lab06/README.md)
