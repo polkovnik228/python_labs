@@ -112,7 +112,7 @@ def test_csv_to_json_invalid_file(tmp_path: Path, bad_file):
         csv_to_json(str(path), str(tmp_path / "out.json"))
 ```
 
-### Автотест
+### Запуск тестов через pytest
 
 ![image7.1](../../images/lab07/an_pytest.png)
 
