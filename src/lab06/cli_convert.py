@@ -44,7 +44,7 @@ def build_parser():
     p1.add_argument("--out", dest="output", required=True, help="Выходной CSV-файл")
     p1.set_defaults(func=cmd_json2csv)
 
-    # csv -> json 
+    # csv -> json
     p2 = subparsers.add_parser("csv2json", help="Конвертировать CSV → JSON")
     p2.add_argument("--in", dest="input", required=True, help="Входной CSV-файл")
     p2.add_argument("--out", dest="output", required=True, help="Выходной JSON-файл")
@@ -63,6 +63,7 @@ def main():
     parser = build_parser()
     args = parser.parse_args()
     args.func(args)
+
 
 if __name__ == "__main__":
     main()

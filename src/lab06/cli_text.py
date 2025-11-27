@@ -50,7 +50,9 @@ def build_parser():
 
     stats_p = subparsers.add_parser("stats", help="Частотный анализ слов")
     stats_p.add_argument("--input", required=True, help="Путь к текстовому файлу")
-    stats_p.add_argument("--top", type=int, default=5, help="Сколько слов выводить (по умолчанию 5)")
+    stats_p.add_argument(
+        "--top", type=int, default=5, help="Сколько слов выводить (по умолчанию 5)"
+    )
     stats_p.set_defaults(func=cmd_stats)
 
     return parser

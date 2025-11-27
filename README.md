@@ -17,3 +17,6 @@
 
 ## ЛР6 — CLI‑утилиты с argparse (cat/grep‑lite + конвертеры): Техническое задание
 [Перейти к README lab06](src/lab06/README.md)
+
+## ЛР7 — Тестирование: pytest + стиль (black)
+[Перейти к README lab07](src/lab07/README.md)

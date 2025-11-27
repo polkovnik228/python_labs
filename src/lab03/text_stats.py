@@ -2,10 +2,10 @@ import sys
 import os
 from pathlib import Path
 
-lib_path = Path(__file__).resolve().parent.parent / 'lib'
+lib_path = Path(__file__).resolve().parent.parent / "lib"
 sys.path.insert(0, str(lib_path))
 
-from text import normalize, tokenize, count_freq, top_n #type: ignore
+from text import normalize, tokenize, count_freq, top_n  # type: ignore
 
 
 def analyze_text(text):
@@ -19,7 +19,7 @@ def analyze_text(text):
 def print_stats(total, unique, top_words, table=False):
     print(f"Всего слов: {total}")
     print(f"Уникальных слов: {unique}")
-    
+
     print("Топ-5:")
     if table:
         print_table(top_words)
@@ -31,13 +31,13 @@ def print_stats(total, unique, top_words, table=False):
 def print_table(top_words):
     if not top_words:
         return
-    
+
     word_width = max(len("слово"), max(len(w) for w, _ in top_words))
     freq_width = max(len("частота"), max(len(str(c)) for _, c in top_words))
-    
+
     print(f"{'слово':<{word_width}} | {'частота':<{freq_width}}")
     print("-" * (word_width + freq_width + 3))
-    
+
     for word, count in top_words:
         print(f"{word:<{word_width}} | {count:<{freq_width}}")
 
@@ -48,13 +48,13 @@ def main():
     except KeyboardInterrupt:
         print("\nПрервано", file=sys.stderr)
         return
-    
+
     if not text.strip():
         print("Ошибка: пустой ввод", file=sys.stderr)
         return
-    
+
     total, unique, top = analyze_text(text)
-    table_format = os.environ.get('TABLE_FORMAT', '0') == '1'
+    table_format = os.environ.get("TABLE_FORMAT", "0") == "1"
     print_stats(total, unique, top, table=True)
 
 

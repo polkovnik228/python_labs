@@ -13,7 +13,7 @@ def write_csv(
     path: str | Path,
     header: tuple[str, ...] | None = None,
 ) -> None:
-    
+
     p = Path(path)
     rows = list(rows)
     if rows and len({len(r) for r in rows}) != 1:

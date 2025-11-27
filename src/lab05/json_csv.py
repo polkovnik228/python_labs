@@ -2,6 +2,7 @@ import json
 import csv
 from pathlib import Path
 
+
 def json_to_csv(json_path: str, csv_path: str) -> None:
     """
     Преобразует JSON-файл в CSV.
@@ -17,9 +18,13 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     with jpath.open(encoding="utf-8") as jf:
         data = json.load(jf)
 
-    if not isinstance(data, list) or not data or not all(isinstance(x, dict) for x in data):
+    if (
+        not isinstance(data, list)
+        or not data
+        or not all(isinstance(x, dict) for x in data)
+    ):
         raise ValueError
-    
+
     keys = []
     for d in data:
         for k in d:
@@ -31,6 +36,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
         writer.writeheader()
         for row in data:
             writer.writerow({k: row.get(k, "") for k in keys})
+
 
 def csv_to_json(csv_path: str, json_path: str) -> None:
     """

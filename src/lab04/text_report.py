@@ -3,6 +3,7 @@ from pathlib import Path
 from src.lib.text import normalize, tokenize, top_n
 from src.lab04.io_txt_csv import read_text, write_csv
 
+
 def main():
     input_path = Path("data/lab04/input.txt")
     output_path = Path("data/lab04/report.csv")
@@ -24,6 +25,7 @@ def main():
     print("Топ-5:")
     for word, count in top5:
         print(f"{word}:{count}")
+
 
 if __name__ == "__main__":
     main()
