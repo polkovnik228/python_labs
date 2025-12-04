@@ -20,3 +20,6 @@
 
 ## ЛР7 — Тестирование: pytest + стиль (black)
 [Перейти к README lab07](src/lab07/README.md)
+
+## ЛР8 – ООП в Python: `@dataclass Student`, методы и сериализация
+[Перейти к README lab08](src/lab08/README.md)
