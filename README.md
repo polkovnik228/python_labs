@@ -23,3 +23,6 @@
 
 ## ЛР8 – ООП в Python: `@dataclass Student`, методы и сериализация
 [Перейти к README lab08](src/lab08/README.md)
+
+## ЛР9 — «База данных» на CSV: класс `Group`, CRUD-операции и CLI
+[Перейти к README lab09](src/lab09/README.md)
