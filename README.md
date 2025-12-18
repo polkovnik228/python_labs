@@ -26,3 +26,6 @@
 
 ## ЛР9 — «База данных» на CSV: класс `Group`, CRUD-операции и CLI
 [Перейти к README lab09](src/lab09/README.md)
+
+## ЛР10 — Структуры данных: Stack, Queue, Linked List и бенчмарки
+[Перейти к README lab10](src/lab10/README.md)
